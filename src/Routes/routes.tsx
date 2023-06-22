@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Profile from "../components/profile";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ import Profile1 from "../components/Profile1";
 function Routes1() {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                 <Route path="/login" element={<Login />} />             
                     <Route path="/profile1" element={<Profile1 />} />
@@ -21,7 +21,7 @@ function Routes1() {
                         
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 }
